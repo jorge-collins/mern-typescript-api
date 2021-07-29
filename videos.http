@@ -1,0 +1,23 @@
+@api = http://localhost:3000
+
+###
+GET {{api}}/videos
+
+###
+GET {{api}}/videos/60ea9005e55775216c301c57
+
+### Create a video
+POST {{api}}/videos
+Content-Type: application/json
+
+{
+    "url": "https://www.youtube.com/watch?v=rBOHRl6SY8Y",
+    "title": "MSG 3",
+    "description": "A video music"
+}
+
+###
+DELETE {{api}}/videos/1
+
+###
+PUT {{api}}/videos/1
